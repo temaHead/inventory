@@ -1,0 +1,31 @@
+.navContainer {
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(216, 216, 216);
+
+}
+.mainRoom {
+  font-size: 24px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+.leftRoom {
+  margin-left: 20px;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.rightRoom {
+  margin-left: 20px;
+
+  font-size: 20px;
+}
+.room{
+    font-size: 18px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+
+}

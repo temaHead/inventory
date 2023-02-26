@@ -1,0 +1,59 @@
+.containerRoom {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+
+  width: 80vw;
+  background-color: rgb(240, 240, 240);
+}
+.title {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  margin: 5px;
+}
+.buttonAdd {
+  width: 150px;
+  height: 35px;
+  margin: 20px;
+}
+.form {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-color: rgb(197, 195, 195);
+  top: 50px;
+  left: 17px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 20px;
+  padding: 20px;
+}
+form input{
+  font-size: 30px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  padding: 5px;
+}
+form button{
+  font-size: 20px;
+  border-radius: 5px;
+}
+.inputBox {
+  display: flex;
+  flex-direction: column;
+}
+.buttonBox {
+  display: flex;
+  justify-content: space-around;
+}
+input {
+  margin: 10px;
+}
+.containerItem {
+  display: flex;
+  margin: 10px;
+  flex-wrap: wrap;
+}
