@@ -22,17 +22,12 @@ function RoomInventory(props: RoomInventoryProps): JSX.Element {
   const dispatch = useAppDispatch();
   let roomInventory;
   
-  
   useEffect(() => {
     dispatch(inventoryLoaded());
   }, []);
   
-  useEffect(() => {
-    dispatch(placesLoaded());
-  }, [dispatch]);
-  
   const inventory = useSelector(selectInventory);
-  
+
   if (type === 'main') {
     const arr = ['main-101', 'main-102', 'main-head'];
     roomInventory = inventory.filter((el) => {
@@ -78,13 +73,13 @@ function RoomInventory(props: RoomInventoryProps): JSX.Element {
     dispatch(inventoryDeleted(id));
   };
 
-  const handleProductChange=(newProduct:{}):void=>{
-    dispatch(inventoryChange(newProduct))
-  }
+  const handleProductChange = (newProduct: {}): void => {
+    dispatch(inventoryChange(newProduct));
+  };
 
   return (
     <div className={style.containerRoom}>
-      <div className={style.title}>Список доступного инвертаря</div>
+      <div className={style.title}>Список доступного инвентаря</div>
 
       {add && (
         <button className={style.buttonAdd} onClick={handleShow}>
@@ -105,7 +100,7 @@ function RoomInventory(props: RoomInventoryProps): JSX.Element {
       )}
       <div className={style.containerItem}>
         {roomInventory.map((el) => (
-          <Inventory key={el.id} el={el} onDelete={handleDelete} onChange={handleProductChange}/>
+          <Inventory key={el.id} el={el} onDelete={handleDelete} onChange={handleProductChange} />
         ))}
       </div>
     </div>
